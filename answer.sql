@@ -1,1 +1,2 @@
-CREATE DATABASE valhalla;
+DROP DATABASE polar;
+
