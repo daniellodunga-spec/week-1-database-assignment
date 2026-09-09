@@ -1,0 +1,12 @@
+SHOW DATABASES;
+USE sales;
+SELECT checkNumber,paymentDate,amount FROM payments;
+SELECT orderDate,requiredDate,status FROM orders;
+SELECT orderDate,requiredDate,status FROM orders WHERE status = 'In process';
+SELECT orderDate,requiredDate,status FROM orders WHERE status = 'In process' ORDER BY orderDate DESC;
+SELECT firstName,lastName,email FROM employees;
+SELECT firstName,lastName,email FROM employees WHERE jobtitle = 'Sales Rep';
+SELECT firstName,lastName,email FROM employees WHERE jobtitle = 'Sales Rep' ORDER BY employeeNumber DESC;
+SELECT * FROM offices;
+SELECT productName,quantityInStock FROM products;
+SELECT productName,quantityInStock FROM products ORDER BY buyPrice ASC LIMIT 5;
